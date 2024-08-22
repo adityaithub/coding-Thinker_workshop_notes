@@ -8,21 +8,40 @@
 <body>
     <h1>Registration Form</h1>
     <form id="userDetail">
-        <label for="firstName">firstName</label>
-        <input type="text" name="firstName" id="firstName">
-        <br>
-        <br>
-        <label for="lastName">LastName</label>
-        <input type="text" name="lastName" id="lastName">
-        <br>
-        <br>
-        <label for="phone">Phone-Number</label>
-        <input type="text" name="phone" id="phone">
-        <br>
-        <br>
-        <label for="gender"></label>
-        <button type="submit">submit</button>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" class="inputField">
+        <br><br>
+    
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" class="inputField">
+        <br><br>
+    
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone" class="inputField">
+        <br><br>
+    
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="male" class="genderOption" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" name="gender" id="female" class="genderOption" value="female">
+        <label for="female">Female</label><br>
+        
+        <input type="radio" name="gender" id="other" class="genderOption" value="other">
+        <label for="other">Other</label>
+        <br><br>
+    
+        <label for="country">Country</label>
+        <select name="country" id="country" class="countrySelect">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <br><br>
+    
+        <button type="submit" class="submitButton">Submit</button>
     </form>
+    
     <script src="app.js"></script>
 </body>
 </html>
